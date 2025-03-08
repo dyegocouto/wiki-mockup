@@ -23,7 +23,7 @@ body {
 .wrapper {
 	background-color: #fff;
 	border: .0625rem solid #3e7614;
-	border-radius: 1em;
+	border-radius: 1rem;
 	padding: 1.5rem 1.875rem;
 	margin: 2.21rem auto;
 	width: clamp(calc(22.5rem - 2rem), calc(100% - 1rem), 62.5rem);
@@ -36,15 +36,15 @@ body {
 	justify-content: space-between;
 	align-items: center;
 
-	.nav__left-side {
+	.nav__left {
 		display: flex;
 		align-items: center;
 	}
 
-	.nav__right-side {
+	.nav__right {
 		display: flex;
 		align-items: center;
-		margin-right: 50px;
+		margin-right: 3.125rem;
 	}
 
 	.nav__logo {
@@ -52,90 +52,79 @@ body {
 		margin-left: 1.5rem;
 	}
 
-	.nav__links {
-		font-family: "Public Sans", sans-serif;
-	}
-
 	.nav__link {
-		font-size: 1rem;
+		font-family: "Public Sans", sans-serif;
+		font-size: var(--regular);
 		font-weight: 600;
-		color: #ffffff;
+		color: #fff;
 		text-decoration-color: #54b752;
 		text-decoration-thickness: .125rem;
-		text-underline-offset: .375rem;
 		margin-right: 1vw;
-	}
-
-	.responsive-button {
 		position: relative;
 	}
 
-	.responsive-button.arrow::after {
+	.large-screen {
+		display: none;
+	}
+
+	.arrow::after {
 		content: "";
 		display: inline-block;
-		width: 12px;
-		height: 12px;
-		background: url("../images/icon-dropdown-arrow-green.svg");
+		width: .75rem;
+		height: .75rem;
+		background: url(../images/icon-dropdown-arrow-green.svg);
 		background-size: contain;
-		margin-left: 4px;
+		margin-left: .25rem;
 		background-repeat: no-repeat;
 		vertical-align: middle;
 	}
 
-	.nav__search-container {
+	.nav__search-box {
 		position: relative;
 		display: inline-block;
 	}
 
-	.search-icon {
+	.nav__search-icon {
 		position: absolute;
-		left: 10px;
+		left: .625rem;
 		top: 55%;
 		transform: translateY(-50%);
-		width: 20px;
+		width: 1.25rem;
 		height: auto;
-		pointer-events: none;
 	}
 
-	.nav__search {
+	.nav__search-input {
 		border-radius: 3.125rem;
 		padding: .5rem 0 .5rem 2.1875rem;
 		outline: none;
 		border: 0;
 		justify-self: flex-end;
-		height: 35px;
-		width: 200px;
+		height: 2.1875rem;
+		width: 12.5rem;
 	}
 
-	::placeholder {
-		margin-left: 10px;
+	.nav__search-input::placeholder {
+		margin-left: .625rem;
 	}
 
-	.nav__menu {
-		display: none;
-		margin-right: .625rem;
-		font-size: 1rem;
-		font-weight: 600;
-		color: #ffffff;
-		text-decoration-color: #54b752;
-		text-decoration-thickness: .125rem;
-		text-underline-offset: .375rem;
+	.menu {
+		display: inline-block;
 		margin-right: 2.5vw;
 	}
 
-	.nav__menu::after {
+	.menu::after {
 		content: "";
 		display: inline-block;
-		width: 16px;
-		height: 16px;
-		background: url("../images/icon-menu-green.svg");
+		width: 1rem;
+		height: 1rem;
+		background: url(../images/icon-menu-green.svg);
 		background-size: contain;
 		margin-left: 4px;
 		background-repeat: no-repeat;
 		vertical-align: middle;
 	}
 
-	.always-decorated {
+	.decorated {
 		text-decoration: underline;
 		text-decoration-color: #54b752;
 		text-decoration-thickness: .125rem;
@@ -143,31 +132,25 @@ body {
 	}
 }
 
-h1,
-h2,
-h3 {
+.header__title {
 	font-family: sans-serif;
-}
-
-h1,
-h2 {
 	border-bottom: .0625rem solid #aaa;
 	padding-bottom: .625rem;
-}
-
-h1 {
 	font-size: var(--extra-large);
 	font-weight: normal;
 }
 
-h2 {
+.main__section-heading {
+	font-family: sans-serif;
+	border-bottom: .0625rem solid #aaa;
 	font-size: var(--very-large);
 	font-weight: normal;
 	margin: 0 0 .7144rem 0;
 	padding: .5953rem 0 .2024rem 0;
 }
 
-h3 {
+.main__section-subheading {
+	font-family: sans-serif;
 	font-size: var(--large);
 	font-weight: 700;
 }
@@ -190,7 +173,6 @@ a:hover {
 }
 
 a:active {
-	text-decoration: underline;
 	color: #faa700;
 }
 
@@ -202,14 +184,14 @@ a:active {
 	padding: .1875rem;
 	clear: left;
 
-	.figure__img {
+	.figure__image {
 		display: block;
 		width: auto;
 		margin: .1875rem;
 		padding: 0;
 	}
 
-	.figure__figcaption {
+	.figure__caption {
 		font-size: var(--very-small);
 		font-weight: 400;
 		display: table-caption;
@@ -219,18 +201,18 @@ a:active {
 	}
 }
 
-.align-left {
+.left {
 	margin: 0 1.1113rem 1.0319rem 0;
 	float: left;
 	border-radius: .0625rem;
 }
 
-@media only screen and (max-width: 53.125rem) {
-	.responsive-button {
-		display: none;
+@media only screen and (min-width: 53.125rem) {
+	.large-screen {
+		display: inline-block !important;
 	}
 
-	.nav__menu {
-		display: inline-block !important;
+	.small-screen {
+		display: none;
 	}
 }

@@ -9,36 +9,36 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="nav__left-side">
+      <div class="nav__left">
         <img
           class="nav__logo"
           src="images/logo.png"
           alt="Logo of the WikiWiki website."
         />
-        <div class="nav__links">
-          <a class="nav__link responsive-button" href="#">News</a>
-          <a class="nav__link responsive-button always-decorated arrow" href="#"
-            >Suggestions</a
-          >
-          <a class="nav__link responsive-button" href="#">Forums</a>
-          <a class="nav__link responsive-button" href="#">Discord</a>
-          <a class="nav__link responsive-button arrow" href="#">More</a>
-        </div>
+        <a class="nav__link large-screen" href="#">News</a>
+        <a class="nav__link large-screen decorated arrow" href="#"
+          >WikiCentral</a
+        >
+        <a class="nav__link large-screen" href="#">Forums</a>
+        <a class="nav__link large-screen" href="">Discord</a>
+        <a class="nav__link large-screen arrow" href="#">More</a>
       </div>
-      <div class="nav__right-side">
-        <a class="nav__menu" href="">Menu</a>
-        <div class="nav__search-container">
+      <div class="nav__right">
+        <a class="nav__link large-screen arrow" href="#">Editors</a>
+        <a class="nav__link large-screen arrow" href="#">Account</a>
+        <a class="nav__link menu small-screen" href="#">Menu</a>
+        <div class="nav__search-box">
           <img
-            class="search-icon"
+            class="nav__search-icon"
             src="images/icon-search.svg"
             alt="Search Icon"
           />
           <input
-            class="nav__search"
+            class="nav__search-input"
             type="search"
             name="#"
             id="#"
-            placeholder="Search WikiWki"
+            placeholder="Search WikiWiki"
           />
         </div>
       </div>
@@ -47,81 +47,83 @@
       <header class="header">
         <h1 class="header__title">Charmander (Pokémon)</h1>
       </header>
-      <section class="main__section">
-        <p>
-          <strong>Charmander</strong> (<a href="#">Japanese</a>:
-          <strong>ヒトカゲ</strong> <em>Hitokage</em>) is a
-          <a href="#">Fire-type Pokémon</a> introduced in
-          <a href="#">Generation I</a>.
-        </p>
-        <p>
-          It <a href="#">evolves</a> into <a href="#">Charmeleon</a> starting at
-          <a href="#">level</a> 16, which evolves into Charizard starting at
-          level 36.
-        </p>
-        <p>
-          Along with <a href="#">Bulbasaur</a> and <a href="#">Squirtle</a>,
-          Charmander is one of the three
-          <a href="#">first partner Pokémon of Kanto</a> available at the
-          beginning of <a href="#">Pokémon Red, Green</a>, <a href="#">Blue</a>,
-          <a href="#">FireRed, and LeafGreen</a>.
-        </p>
-      </section>
-      <section class="main__section">
-        <h2 class="main__section-heading">Biology</h2>
-        <figure class="figure align-left">
-          <img
-            class="figure__image"
-            src="images/charmander_2.png"
-            alt="Charmander, using a leaf to protect its tail's flame from the rain."
-          />
-          <figcaption class="figure__figcaption">
-            Charmander protecting the flame on its tail from the rain.
-          </figcaption>
-        </figure>
-        <p>
-          Charmander is a bipedal, <a href="#">reptilian Pokémon</a> with a
-          primarily orange body and blue eyes. Its underside from the chest down
-          and the soles of its feet are cream-colored. It has two small fangs
-          visible in its upper jaw and two smaller fangs in its lower jaw. A
-          fire burns at the tip of this Pokémon's slender tail, which has blazed
-          there since Charmander's birth.
-        </p>
-        <p>
-          The flame can indicate Charmander's health and mood, burning brightly
-          when the Pokémon is strong, weakly when it is exhausted, wavering when
-          it is happy, and blazing when it is enraged. It is said that
-          Charmander would die if its flame were to go out. However, if the
-          Pokémon is healthy, the flame will continue to burn even if it gets a
-          bit wet and is said to steam in the rain. As shown in
-          <a href="#">Pokémon Sleep</a>, Charmander is known to sleep while
-          curled up.<sup><a href="#">[1]</a></sup> Supposedly, Charmander is
-          drawing warmth from the flame on its tail. During quiet nights, one
-          can hear the sound of a flame burning if you listen hard enough while
-          Charmander sleeps. Charmander has four different sleep styles it
-          sleeps in: <em> Crackling Sleep </em>, <em>Tummy-Rub Sleep</em>,
-          <em>Tummy-Up Sleep</em>, and <em>Atop-Belly Sleep</em>.
-        </p>
-        <p>
-          Charmander can be found in hot, <a href="#">mountainous areas</a>. It
-          has been recently seen living in the <a href="#">Terarium</a> of
-          <a href="#">Blueberry Academy</a>. However, it is found far more often
-          in the ownership of <a href="#">Trainers</a>. As shown in
-          <a href="#">Pokémon Snap</a> and <a href="#">New Pokémon Snap</a>,
-          Charmander exhibits pack behavior, calling others of its species if it
-          finds food and watching the flames on each other's tails to ensure
-          they don't go out.
-        </p>
-        <h3 class="main__section-subheading">Evolution</h3>
-        <p>
-          Charmander evolves into <a href="#" target="_blank">Charmeleon</a>,
-          which evolves into <a href="#" target="_blank">Charizard.</a>
-        </p>
-        <p>
-          (For specifics on this Pokémon's Evolution in the games, refer to
-          <a href="#" target="_blank">Game data→Evolution data.</a>)
-        </p>
-      </section>
+      <main class="main">
+        <section class="main__section">
+          <p>
+            <strong>Charmander</strong> (<a href="#">Japanese</a>:
+            <strong>ヒトカゲ</strong> <em>Hitokage</em>) is a
+            <a href="#">Fire-type Pokémon</a> introduced in
+            <a href="#">Generation I</a>.
+          </p>
+          <p>
+            It <a href="#">evolves</a> into <a href="#">Charmeleon</a> starting
+            at <a href="#">level</a> 16, which evolves into Charizard starting
+            at level 36.
+          </p>
+          <p>
+            Along with <a href="#">Bulbasaur</a> and <a href="#">Squirtle</a>,
+            Charmander is one of the three
+            <a href="#">first partner Pokémon of Kanto</a> available at the
+            beginning of <a href="#">Pokémon Red, Green</a>,
+            <a href="#">Blue</a>, <a href="#">FireRed, and LeafGreen</a>.
+          </p>
+        </section>
+        <section class="main__section">
+          <h2 class="main__section-heading">Biology</h2>
+          <figure class="figure left">
+            <img
+              class="figure__image"
+              src="images/charmander_2.png"
+              alt="Charmander, using a leaf to protect its tail's flame from the rain."
+            />
+            <figcaption class="figure__caption">
+              Charmander protecting the flame on its tail from the rain.
+            </figcaption>
+          </figure>
+          <p>
+            Charmander is a bipedal, <a href="#">reptilian Pokémon</a> with a
+            primarily orange body and blue eyes. Its underside from the chest
+            down and the soles of its feet are cream-colored. It has two small
+            fangs visible in its upper jaw and two smaller fangs in its lower
+            jaw. A fire burns at the tip of this Pokémon's slender tail, which
+            has blazed there since Charmander's birth.
+          </p>
+          <p>
+            The flame can indicate Charmander's health and mood, burning
+            brightly when the Pokémon is strong, weakly when it is exhausted,
+            wavering when it is happy, and blazing when it is enraged. It is
+            said that Charmander would die if its flame were to go out. However,
+            if the Pokémon is healthy, the flame will continue to burn even if
+            it gets a bit wet and is said to steam in the rain. As shown in
+            <a href="#">Pokémon Sleep</a>, Charmander is known to sleep while
+            curled up.<sup><a href="#">[1]</a></sup> Supposedly, Charmander is
+            drawing warmth from the flame on its tail. During quiet nights, one
+            can hear the sound of a flame burning if you listen hard enough
+            while Charmander sleeps. Charmander has four different sleep styles
+            it sleeps in: <em> Crackling Sleep </em>, <em>Tummy-Rub Sleep</em>,
+            <em>Tummy-Up Sleep</em>, and <em>Atop-Belly Sleep</em>.
+          </p>
+          <p>
+            Charmander can be found in hot, <a href="#">mountainous areas</a>.
+            It has been recently seen living in the <a href="#">Terarium</a> of
+            <a href="#">Blueberry Academy</a>. However, it is found far more
+            often in the ownership of <a href="#">Trainers</a>. As shown in
+            <a href="#">Pokémon Snap</a> and <a href="#">New Pokémon Snap</a>,
+            Charmander exhibits pack behavior, calling others of its species if
+            it finds food and watching the flames on each other's tails to
+            ensure they don't go out.
+          </p>
+          <h3 class="main__section-subheading">Evolution</h3>
+          <p>
+            Charmander evolves into a <a href="#">Charmeleon</a>, which evolves
+            into <a href="#">Charizard.</a>
+          </p>
+          <p>
+            (For specifics on this Pokémon's Evolution in the games, refer to
+            <a href="#" target="_blank">Game data→Evolution data.</a>)
+          </p>
+        </section>
+      </main>
     </div>
   </body>
 </html>
