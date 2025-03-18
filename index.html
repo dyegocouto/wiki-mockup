@@ -9,25 +9,33 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="nav__left">
-        <img
-          class="nav__logo"
-          src="images/logo.png"
-          alt="Logo of the WikiWiki website."
-        />
-        <a class="nav__link large-screen" href="#">News</a>
-        <a class="nav__link large-screen decorated arrow" href="#"
+      <div class="nav__left-side">
+        <img class="nav__logo" src="images/logo.png" alt="WikiWiki's logo." />
+        <a class="nav__link nav__link--large-screen" href="#">News</a>
+        <a
+          class="nav__link nav__link--large-screen nav__link--decorated"
+          href="#"
           >WikiCentral</a
         >
-        <a class="nav__link large-screen" href="#">Forums</a>
-        <a class="nav__link large-screen" href="">Discord</a>
-        <a class="nav__link large-screen arrow" href="#">More</a>
+        <a class="nav__link nav__link--large-screen" href="#">Forums</a>
+        <a class="nav__link nav__link--large-screen nav__link--arrow" href="#"
+          >Discord</a
+        >
+        <a class="nav__link nav__link--large-screen nav__link--arrow" href="#"
+          >More</a
+        >
       </div>
-      <div class="nav__right">
-        <a class="nav__link large-screen arrow" href="#">Editors</a>
-        <a class="nav__link large-screen arrow" href="#">Account</a>
-        <a class="nav__link menu small-screen" href="#">Menu</a>
-        <div class="nav__search-box">
+      <div class="nav__right-side">
+        <a class="nav__link nav__link--large-screen nav__link--arrow" href="#"
+          >Editors</a
+        >
+        <a class="nav__link nav__link--large-screen nav__link--arrow" href="#"
+          >Account</a
+        >
+        <a class="nav__link nav__link--small-screen nav__link--menu" href="#"
+          >Menu</a
+        >
+        <div class="nav__search-bar">
           <img
             class="nav__search-icon"
             src="images/icon-search.svg"
@@ -43,12 +51,39 @@
         </div>
       </div>
     </nav>
-    <div class="wrapper">
+    <div class="central-wrapper">
       <header class="header">
         <h1 class="header__title">Charmander (Pokémon)</h1>
       </header>
       <main class="main">
         <section class="main__section">
+          <div class="infobox">
+            <div class="infobox__section infobox__section-1">
+              <div class="infobox__cell infobox__cell-1">
+                <div><strong>Charmander</strong></div>
+                <div>Lizard Pokémon</div>
+                <div><strong>ヒトカゲ</strong></div>
+                <div><em>Hitokage</em></div>
+              </div>
+              <div class="infobox__cell infobox__cell-2">#0004</div>
+              <div class="infobox__cell infobox__cell-3">
+                <img src="images/charmander_1.png" alt="A charmander" />
+                <p><a href="#">Images on the WikiWiki Archives</a></p>
+              </div>
+            </div>
+            <div class="infobox__section infobox__section-2">
+              <div><b>Type</b></div>
+              <div class="infobox__cell infobox__cell-4"><span>Fire</span></div>
+            </div>
+            <div class="infobox__section infobox__section-3">
+              <div><b>Abilities</b></div>
+              <div class="infobox__cell infobox__cell-5">
+                <div>Blaze</div>
+                <div>Solar Power</div>
+                <div>Hidden Ability</div>
+              </div>
+            </div>
+          </div>
           <p>
             <strong>Charmander</strong> (<a href="#">Japanese</a>:
             <strong>ヒトカゲ</strong> <em>Hitokage</em>) is a
@@ -68,7 +103,7 @@
             <a href="#">Blue</a>, <a href="#">FireRed, and LeafGreen</a>.
           </p>
           <div class="toc">
-            <ul>
+            <ul class="foo">
               <li>
                 <a href="#">
                   <span class="toc__number">1</span>
@@ -237,12 +272,12 @@
           </div>
         </section>
         <section class="main__section">
-          <h2 class="main__section-heading">Biology</h2>
-          <figure class="figure left">
+          <h2 class="main__section-header">Biology</h2>
+          <figure class="figure figure--left">
             <img
               class="figure__image"
               src="images/charmander_2.png"
-              alt="Charmander, using a leaf to protect its tail's flame from the rain."
+              alt="Charmander, using a leaf to protect the flame on its tail from the rain."
             />
             <figcaption class="figure__caption">
               Charmander protecting the flame on its tail from the rain.
@@ -281,7 +316,7 @@
             it finds food and watching the flames on each other's tails to
             ensure they don't go out.
           </p>
-          <h3 class="main__section-subheading">Evolution</h3>
+          <h3 class="main__section-subheader">Evolution</h3>
           <p>
             Charmander evolves into a <a href="#">Charmeleon</a>, which evolves
             into <a href="#">Charizard.</a>
