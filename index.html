@@ -10,7 +10,11 @@
   <body>
     <nav class="nav">
       <div class="nav__left-side">
-        <img class="nav__logo" src="images/logo.png" alt="WikiWiki's logo." />
+        <picture class="nav__logo">
+          <source srcset="images/logo.png" media="(min-width: 640px)" />
+          <img src="images/small-logo.png" alt="Responsive Image" />
+        </picture>
+
         <a class="nav__link nav__link--large-screen" href="#">News</a>
         <a
           class="nav__link nav__link--large-screen nav__link--decorated"
